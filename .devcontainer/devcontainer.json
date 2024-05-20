@@ -1,0 +1,16 @@
+{
+    "name": "Liberty Project",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "runArgs": ["--init", "-p", "9080:9080", "-p", "9443:9443"],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "vscjava.vscode-java-pack"
+    ],
+    "postCreateCommand": "",
+    "remoteUser": "root"
+}
+
