@@ -20,7 +20,7 @@ MANIFEST.MF
 README.html
 
 # VSCode
-.vscode/
+#.vscode/
 
 # Zip files
 *.zip
