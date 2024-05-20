@@ -2,7 +2,7 @@
     "name": "Liberty Project",
     "context": "..",
     "dockerFile": "../Dockerfile",
-    "runArgs": ["--init", "-p", "9080:9080", "-p", "9443:9443"],
+    "runArgs": ["--init", "-p", "9080:9080", "-p", "9443:9443", "-p", "7777:7777"],
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
@@ -11,6 +11,6 @@
         "vscjava.vscode-java-pack"
     ],
     "postCreateCommand": "",
-    "remoteUser": "root"
+    "remoteUser": "root",
+    "forwardPorts": [9080, 9443, 7777]
 }
-
