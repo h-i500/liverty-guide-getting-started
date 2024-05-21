@@ -5,6 +5,7 @@
         <feature>jsonb-3.0</feature>
         <feature>cdi-4.0</feature>
         <feature>mpMetrics-5.1</feature>
+        <feature>mpHealth-4.0</feature>
         <feature>mpConfig-3.1</feature>
     </featureManager>
 
@@ -14,6 +15,8 @@
     <webApplication location="guide-getting-started.war" contextRoot="/" />
     
     <mpMetrics authentication="false"/>
+
+    <logging traceSpecification="com.ibm.ws.microprofile.health.*=all" />
 
     <httpEndpoint host="*" httpPort="${http.port}"
         httpsPort="${https.port}" id="defaultHttpEndpoint"/>
